@@ -55,7 +55,7 @@ public class ItemController {
     /**
      * 상품 수정 폼
      */
-    @GetMapping("/items/{itemId/edit")
+    @GetMapping("/items/{itemId}/edit")
     public String updateItem(@PathVariable("itemId") Long itemId, Model model) {
 
         Book item = (Book) itemService.findOne(itemId);
